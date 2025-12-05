@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blueprint | Arquitectura Digital para Reformas de Lujo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  fontFamily: {
+                      sans: ['Inter', 'sans-serif'],
+                  },
+                  colors: {
+                      slate: {
+                          850: '#151e2e',
+                          900: '#0f172a',
+                          950: '#020617',
+                      }
+                  },
+                  backgroundImage: {
+                      'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                      'subtle-grid': "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgMGgwdjFIMHoiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==')",
+                  },
+                  keyframes: {
+                    'fade-in-up': {
+                      '0%': { opacity: '0', transform: 'translateY(10px)' },
+                      '100%': { opacity: '1', transform: 'translateY(0)' },
+                    }
+                  },
+                  animation: {
+                    'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar and subtle animations */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #020617; }
+      ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+      .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid rgba(255, 255, 255, 0.05); }
+      .text-glow { text-shadow: 0 0 20px rgba(255, 255, 255, 0.1); }
+      
+      /* Utilities */
+      .perspective-2000 { perspective: 2000px; }
+      .rotate-x-6 { transform: rotateX(6deg); }
+      .rotate-x-0 { transform: rotateX(0deg); }
+      .preserve-3d { transform-style: preserve-3d; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-white/20 selection:text-white overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>
