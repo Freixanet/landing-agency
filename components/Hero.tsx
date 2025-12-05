@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
 
         {/* Abstract UI Mockup */}
         <div className="mt-20 relative mx-auto max-w-4xl perspective-2000">
-          <div className="relative bg-slate-900 border border-white/10 rounded-lg shadow-2xl overflow-hidden aspect-[16/9] rotate-x-6 transform origin-top hover:rotate-x-0 transition-transform duration-700 ease-out group">
+          <div className="relative bg-slate-900 border border-white/10 rounded-lg shadow-2xl overflow-hidden aspect-auto md:aspect-[16/9] rotate-x-6 transform origin-top hover:rotate-x-0 transition-transform duration-700 ease-out group">
             <div className="absolute inset-0 bg-gradient-to-tr from-slate-950 via-slate-900 to-slate-800 opacity-90"></div>
             {/* Mockup Header */}
             <div className="h-8 border-b border-white/5 flex items-center px-4 gap-2">
@@ -49,11 +49,11 @@ export const Hero: React.FC = () => {
               <div className="w-2 h-2 rounded-full bg-emerald-500/20"></div>
             </div>
             {/* Mockup Body (Wireframe) */}
-            <div className="p-8 grid grid-cols-12 gap-6 opacity-50 group-hover:opacity-80 transition-opacity">
-              <div className="col-span-12 h-40 bg-white/5 rounded border border-white/5 mb-4"></div>
-              <div className="col-span-4 h-32 bg-white/5 rounded border border-white/5"></div>
-              <div className="col-span-4 h-32 bg-white/5 rounded border border-white/5"></div>
-              <div className="col-span-4 h-32 bg-white/5 rounded border border-white/5"></div>
+            <div className="p-4 md:p-8 grid grid-cols-12 gap-3 md:gap-6 opacity-50 group-hover:opacity-80 transition-opacity">
+              <div className="col-span-12 h-28 md:h-40 bg-white/5 rounded border border-white/5 mb-3 md:mb-4"></div>
+              <div className="col-span-4 h-20 md:h-32 bg-white/5 rounded border border-white/5"></div>
+              <div className="col-span-4 h-20 md:h-32 bg-white/5 rounded border border-white/5"></div>
+              <div className="col-span-4 h-20 md:h-32 bg-white/5 rounded border border-white/5"></div>
             </div>
             {/* Reflection */}
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-60"></div>
